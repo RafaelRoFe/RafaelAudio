@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RafaelAudio</title>
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="imagens/site.webmanifest">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+
+  
+    <meta charset="utf-8">
+
+    <style>
+        .principal{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(#000000, #000017);
+            color: #ddd;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .consegui{
+            width: 400px;
+            height: 400px;
+            border: solid #BC18E6;
+            box-shadow: 0px 0px 30px #BC18E6;
+            margin-top: 120px;
+        }
+
+        .descricao {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        .duracao {
+            width: 300px;
+            margin-top: 25px;
+        }
+
+        .barra {
+            width: 330px;
+            height: 20px;
+            border: 3px solid #BC18E6;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: -10px;
+        }
+
+        progress {
+            height: 15px;
+            width: 0%;
+            background-color: #ffffff;
+            border-radius: 20px;
+        }
+
+        .ponto {
+            width: 15px;
+            height: 15px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            margin-left: -10px;
+        }
+
+        .tempo {
+            display: flex;
+            width: 320px;
+            justify-content: space-between;
+        }
+
+        .player {
+            width: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .botao-play, .botao-pause {
+            font-size: 50px;
+            cursor: pointer;
+            padding: 5px 10px;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+        .setas {
+            font-size: 50px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .botao-pause {
+            display: none;
+        }
+        .sus{
+            background: #bd18e6;
+            border-radius: 10px;
+            width: 250px;
+            height: 55px;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+            margin-top: 70px;
+            font-weight: bold;
+            color: #BC18E6;
+            box-shadow: 0px 0px 10px #BC18E6;
+            display: flex;
+            justify-content: center;
+
+        }
+        .opcaocss{
+            color: #ffffff;
+            background-color: #BC18E6;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+    </style>
+    </head>
+
+    <body>
+       <!-- Seção do cabeçalho -->
+      <div class="divprincipal">
+       <header>
+        <div class="imagemlogo"> 
+            <a class="logo" href="index.php">
+              <img src="imagens/RafaelAudiologo.jpg" alt="Home">
+            </a>
+        </div>
+       <div class="itemsnav">
+       <ul class="nav justify-content-center" style="background-color: #BC18E6; border-radius: 10px; width: 300px;">
+        <li class="nav-item" >
+          <a class="nav-link active" aria-current="page" href="index.php"  style="color: #ffffff;">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bibliotecas.html" style="color: #ffffff;">Bibliotecas</a>
+        </li>
+      </ul>
+      </div>
+      <div class="profile">
+        <a class="perfil" href="perfil.php">Perfil</a>
+        <a class="perfil" href="sair.php">encerrar sessão</a>
+
+      </div>
+      </header>
+    
+      <main>
+        <section>
+          <!-- CORPO DO SITE -->
+          <div class="principal">
+            <img class="consegui"id="imagem-musica" src="imagens/natureza.jpg">
+            <div class="descricao">
+                <h2>Nome da música</h2>
+                <i style="color: #BC18E6;">RoFe</i>
+            </div>
+            <div class="duracao">
+                <div class="barra">
+                    <progress value="0" max="1"></progress>
+                    <div class="ponto"></div>
+                </div>
+                <div class="tempo">
+                    <p class="inicio">0:00</p>
+                    <p class="fim">3:40</p>
+                </div>
+            </div>
+            <div class="player">
+                <i class="fas fa-step-backward setas anterior"></i>
+                <i class="fas fa-play-circle botao-play"></i>
+                <i class="fas fa-pause-circle botao-pause"></i>
+                <i class="fas fa-step-forward setas proxima"></i>
+            </div>
+            <audio src="musicas/sound.mp3"></audio>
+            <br>
+            <select id="musicas" class="opcaocss">
+                <option selected class="opcaocss">Selecione a música da playlist para o download</option>
+                <option value="musicas/rain.mp3" class="opcaocss">rain.mp3</option>
+                <option value="musicas/floresta.mp3" class="opcaocss">floresta.mp3</option>
+                <option value="musicas/agua.mp3" class="opcaocss">agua.mp3</option>
+                <option value="musicas/lava.mp3" class="opcaocss">lava.mp3</option>
+            </select>
+    
+                <a class="sus" id="download-link" href="musicas/" download style="color: #ffffff; font: normal 26px Arial; font-weight: bold; margin-top: 25px; margin-bottom: 10px;">Download</a>
+    
+            <script>
+            const select = document.getElementById("musicas");
+            const downloadLink = document.getElementById("download-link");
+      
+            select.addEventListener("change", function() {
+                const selectedValue = select.value;
+                downloadLink.href = selectedValue;
+            });
+            </script>
+          </div>
+        </section>    
+      </main>
+    
+    
+      <!--JavaScript-->
+      <script src="js/natureza.js"></script>
+        <!--BOOTSTRAP JS-->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </div>
+    </body>
+</html>
