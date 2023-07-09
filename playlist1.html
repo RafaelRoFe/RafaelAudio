@@ -47,26 +47,10 @@
             -webkit-text-stroke: 1px #cc00ff;
             fill: #ffffff;
         }
-        .minha-lista-estilizada {
-            list-style-type: none; 
-            color: #ffffff;
-            font-size: 22px; 
-            margin-top: 10px;
-            margin-right: 180px;
-            width: 100%;
-            background-color: #bd18e623;
-            border: solid 2px #BC18E6;
-            border-radius: 5px;
-            margin-top: 100px;
-            height: auto;
-            list-style: none;
-        }
         .imagemplay1{
             display: flex;
             width: 50px; 
             height: 50px;
-
-
         }
     </style>
 
@@ -110,61 +94,77 @@
                     <h1>Playlist - Natureza</h1>
                 </div>
             </div>
-            <div>
-                <ol class="minha-lista-estilizada">
-                    <div class="container">
-                        <p style="color: #ffffff; text-align: center; font: 18px sans-serif; right: 130px; position: absolute; margin-bottom: 30px;">Duração</p>  <p style="color: #ffffff; text-align: center; font: 18px sans-serif; right: 800px; position: absolute; margin-bottom: 30px;">Artista</p> <p style="color: #ffffff; text-align: center; font: 18px sans-serif; left: 420px; position: absolute; margin-bottom: 30px;">Título</p>
-                        <div class="imagemplay1">
-                            <a class="imagemplay1" style="margin-top: 30px; margin-bottom: 10px;" href="sons1.html">
-                             <img src="imagens/chuva.jpg" alt="Imagem">
-                            </a>
-                        </div>
-                        <div class="textoplay1">
-                        </div>
-
-                        <li class="liplay" style="margin-top: 40px; margin-left: 10px; margin-bottom: 0px;">rain.mp3</li> <li class="liplay" style="margin-top: 40px; margin-left: 480px; margin-bottom: 0px; font: normal 20px Arial ">DeftFunk</li> <li class="liplay" style="margin-top: 40px; margin-left: 600px; margin-bottom: 0px; font: normal 20px Arial">0:26</li>
-                    </div>
-                    <hr class="style1" style="color: #000000; background-color: #BC18E6; height: 1px; border: none; margin-right: 100px; width: 98%; margin-top: 40px;">
-                    <div class="container">
-                        <div class="imagemplay1">
-                            <a class="imagemplay1" href="sons1.html">
-                             <img src="imagens/floresta.jpg" alt="Imagem">
-                            </a>
-                        </div>
-
-
-                        <li class="liplay" style="margin-top: 40px; margin-left: 10px; margin-bottom: 40px;">floresta.mp3</li>  <li class="liplay" style="margin-top: 40px; margin-left: 460px; margin-bottom: 30px; font: normal 20px Arial ">MiT</li> <li class="liplay" style="margin-top: 40px; margin-left: 640px; margin-bottom: 30px; font: normal 20px Arial">1:06</li>
-                    </div>
-                    <hr class="style1" style="color: #000000; background-color: #BC18E6; height: 1px; border: none; margin-right: 100px; width: 98%;">
-                    <div class="container">
-                        <div class="imagemplay1">
-                            <a class="imagemplay1" href="sons1.html">
-                             <img src="imagens/agua.jpg" alt="Imagem">
-                            </a>
-                        </div>
-                        <div class="textoplay1">
-                        </div>
-
-                        <li class="liplay"style="margin-top: 40px; margin-left: 10px; margin-bottom: 40px;">agua.mp3</li>  <li class="liplay" style="margin-top: 40px; margin-left: 475px; margin-bottom: 40px; font: normal 20px Arial ">RoFe</li> <li class="liplay" style="margin-top: 40px; margin-left: 640px; margin-bottom: 35px; font: normal 20px Arial">0:07</li>
-                    </div>
-                    <hr class="style1" style="color: #000000; background-color: #BC18E6; height: 1px; border: none; margin-right: 100px; width: 98%;">
-                    <div class="container">
-                        <div class="imagemplay1">
-                            <a class="imagemplay1" href="sons1.html">
-                             <img src="imagens/lava.jpg" alt="Imagem">
-                            </a>
-                        </div>
-                        <div class="textoplay1">
-                        </div>
-
-                        <li class="liplay"style="margin-top: 40px; margin-left: 10px; margin-bottom: 40px;">lava.mp3</li>  <li class="liplay" style="margin-top: 40px; margin-left: 475px; margin-bottom: 40px; font: normal 20px Arial ">blackout</li> <li class="liplay" style="margin-top: 40px; margin-left: 620px; margin-bottom: 40px; font: normal 20px Arial">0:18</li>
-                    </div>
-                </ol>
+            <br>
+            <br>
+            <div class="d-flex justify-content-center" style="background-color: #bd18e66e; border: solid 3px #BC18E6; padding: 50px; border-radius: 30px;">
+              <table class="table" style="width: 70%;">
+                <thead>
+                  <tr style="color: #ffffff;">
+                    <th></th>
+                    <th></th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Criado por</th>
+                    <th scope="col">Duração</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="color: #ffffff;">
+                    <th scope="row">1</th>
+                    <td>
+                      <a class="imagemplay1" href="sons1.html">
+                        <img src="imagens/chuva.jpg" alt="Imagem">
+                       </a>
+                    </td>
+                    <td>rain.mp3</td>
+                    <td>DeftFunk</td>
+                    <td>0:59</td>
+                  </tr>
+                  <tr style="color: #ffffff;">
+                    <th scope="row">2</th>
+                    <td>
+                      <a class="imagemplay1" href="sons1.html">
+                        <img src="imagens/floresta.jpg" alt="Imagem">
+                       </a>
+                    </td>
+                    <td>floresta.mp3</td>
+                    <td>MiT</td>
+                    <td>2:42</td>
+                  </tr>
+                  <tr style="color: #ffffff;">
+                    <th scope="row">3</th>
+                    <td>
+                      <a class="imagemplay1" href="sons1.html">
+                        <img src="imagens/agua.jpg" alt="Imagem">
+                       </a>
+                    </td>
+                    <td>agua.mp3</td>
+                    <td>RoFe</td>
+                    <td>0:03</td>
+                  </tr>
+                  <tr style="color: #ffffff;">
+                    <th scope="row">4</th>
+                    <td>
+                      <a class="imagemplay1" href="sons1.html">
+                        <img src="imagens/lava.jpg" alt="Imagem">
+                       </a>
+                    </td>
+                    <td>lava.mp3</td>
+                    <td>blackout</td>
+                    <td>0:08</td>
+                  </tr>
+                  <tr style="color: #ffffff;">
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
         </section>    
       </main>
-      <br>
-      <br>
         <!-- Seção do rodapé -->
         <footer>
             <div class="quadrofooter">

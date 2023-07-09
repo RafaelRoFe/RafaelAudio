@@ -28,8 +28,8 @@
 
         .imagemplay {
             display: flex;
-            width: 340px; 
-            height: 300px; 
+            max-width: 100%; 
+            height: 350px;
             margin-top: 200px;
             box-shadow: 10px 10px 7px #BC18E6;
             border: solid 3px #BC18E6;
@@ -47,26 +47,10 @@
             -webkit-text-stroke: 1px #cc00ff;
             fill: #ffffff;
         }
-        .minha-lista-estilizada {
-            list-style-type: none; 
-            color: #ffffff;
-            font-size: 22px; 
-            margin-top: 10px;
-            margin-right: 180px;
-            width: 100%;
-            background-color: #bd18e623;
-            border: solid 2px #BC18E6;
-            border-radius: 5px;
-            margin-top: 100px;
-            height: auto;
-            list-style: none;
-        }
         .imagemplay1{
             display: flex;
             width: 50px; 
             height: 50px;
-
-
         }
     </style>
 
@@ -96,7 +80,6 @@
       <div class="profile">
         <a class="perfil" href="perfil.php">Perfil</a>
         <a class="perfil" href="sair.php">encerrar sessão</a>
-
       </div>
       </header>
     
@@ -111,62 +94,77 @@
                     <h1>Playlist - Beat's</h1>
                 </div>
             </div>
-            <div>
-                <ol class="minha-lista-estilizada">
-                    <div class="container">
-                        <p style="color: #ffffff; text-align: center; font: 18px sans-serif; right: 130px; position: absolute; margin-bottom: 30px;">Duração</p>  <p style="color: #ffffff; text-align: center; font: 18px sans-serif; right: 800px; position: absolute; margin-bottom: 30px;">Artista</p> <p style="color: #ffffff; text-align: center; font: 18px sans-serif; left: 420px; position: absolute; margin-bottom: 30px;">Título</p>
-                        <div class="imagemplay1">
-                            <a class="imagemplay1" style="margin-top: 30px; margin-bottom: 10px;" href="sons4.html">
-                             <img src="imagens/trap.jpg" alt="Imagem">
-                            </a>
-                        </div>
-                        <div class="textoplay1">
-                        </div>
-
-                        <li class="liplay" style="margin-top: 40px; margin-left: 10px; margin-bottom: 0px;">trap.mp3</li> <li class="liplay" style="margin-top: 40px; margin-left: 470px; margin-bottom: 0px; font: normal 20px Arial ">DeftFunk</li> <li class="liplay" style="margin-top: 40px; margin-left: 610px; margin-bottom: 0px; font: normal 20px Arial">0:26</li>
-                    </div>
-                    <hr class="style1" style="color: #000000; background-color: #BC18E6; height: 1px; border: none; margin-right: 100px; width: 98%; margin-top: 40px;">
-                    <div class="container">
-                        <div class="imagemplay1">
-                            <a class="imagemplay1" href="sons4.html">
-                             <img src="imagens/rap.jpg" alt="Imagem">
-                            </a>
-                        </div>
-                        <div class="textoplay1">
-                        </div>
-
-                        <li class="liplay" style="margin-top: 40px; margin-left: 10px; margin-bottom: 40px;">rap.mp3</li>  <li class="liplay" style="margin-top: 40px; margin-left: 500px; margin-bottom: 0px; font: normal 20px Arial ">MiT</li> <li class="liplay" style="margin-top: 40px; margin-left: 640px; margin-bottom: 0px; font: normal 20px Arial">1:06</li>
-                    </div>
-                    <hr class="style1" style="color: #000000; background-color: #BC18E6; height: 1px; border: none; margin-right: 100px; width: 98%;">
-                    <div class="container">
-                        <div class="imagemplay1">
-                            <a class="imagemplay1" href="sons4.html">
-                             <img src="imagens/bateria.jpg" alt="Imagem">
-                            </a>
-                        </div>
-                        <div class="textoplay1">
-                        </div>
-
-                        <li class="liplay"style="margin-top: 40px; margin-left: 10px; margin-bottom: 40px;">bateria.mp3</li>  <li class="liplay" style="margin-top: 40px; margin-left: 460px; margin-bottom: 0px; font: normal 20px Arial ">RoFe</li> <li class="liplay" style="margin-top: 40px; margin-left: 635px; margin-bottom: 0px; font: normal 20px Arial">0:07</li>
-                    </div>
-                    <hr class="style1" style="color: #000000; background-color: #BC18E6; height: 1px; border: none; margin-right: 100px; width: 98%;">
-                    <div class="container">
-                        <div class="imagemplay1">
-                            <a class="imagemplay1" href="sons4.html">
-                             <img src="imagens/beatbox.jpg" alt="Imagem">
-                            </a>
-                        </div>
-                        <div class="textoplay1">
-                        </div>
-
-                        <li class="liplay"style="margin-top: 40px; margin-left: 10px; margin-bottom: 40px;">beatbox.mp3</li>  <li class="liplay" style="margin-top: 40px; margin-left: 440px; margin-bottom: 40px; font: normal 20px Arial ">blackout</li> <li class="liplay" style="margin-top: 40px; margin-left: 620px; margin-bottom: 40px; font: normal 20px Arial">0:18</li>
-                    </div>
-                </ol>
+            <br>
+            <br>
+            <div class="d-flex justify-content-center" style="background-color: #bd18e66e; border: solid 3px #BC18E6; padding: 50px; border-radius: 30px;">
+              <table class="table" style="width: 70%;">
+                <thead>
+                  <tr style="color: #ffffff;">
+                    <th></th>
+                    <th></th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Criado por</th>
+                    <th scope="col">Duração</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="color: #ffffff;">
+                    <th scope="row">1</th>
+                    <td>
+                      <a class="imagemplay1" href="sons4.html">
+                        <img src="imagens/trap.jpg" alt="Imagem">
+                       </a>
+                    </td>
+                    <td>trap.mp3</td>
+                    <td>DeftFunk</td>
+                    <td>0:48</td>
+                  </tr>
+                  <tr style="color: #ffffff;">
+                    <th scope="row">2</th>
+                    <td>
+                      <a class="imagemplay1" href="sons4.html">
+                        <img src="imagens/rap.jpg" alt="Imagem">
+                       </a>
+                    </td>
+                    <td>rap.mp3</td>
+                    <td>MiT</td>
+                    <td>0:22</td>
+                  </tr>
+                  <tr style="color: #ffffff;">
+                    <th scope="row">3</th>
+                    <td>
+                      <a class="imagemplay1" href="sons4.html">
+                        <img src="imagens/bateria.jpg" alt="Imagem">
+                       </a>
+                    </td>
+                    <td>bateria.mp3</td>
+                    <td>RoFe</td>
+                    <td>1:21</td>
+                  </tr>
+                  <tr style="color: #ffffff;">
+                    <th scope="row">4</th>
+                    <td>
+                      <a class="imagemplay1" href="sons4.html">
+                        <img src="imagens/beatbox.jpg" alt="Imagem">
+                       </a>
+                    </td>
+                    <td>beatbox.mp3</td>
+                    <td>blackout</td>
+                    <td>0:11</td>
+                  </tr>
+                  <tr style="color: #ffffff;">
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
         </section>    
       </main>
-      <br>
-      <br>
         <!-- Seção do rodapé -->
         <footer>
             <div class="quadrofooter">
@@ -211,7 +209,7 @@
 
     
       <!--JavaScript-->
-      <script src="js/main.js"></script>
+      <script src="js/natureza.js"></script>
         <!--BOOTSTRAP JS-->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
