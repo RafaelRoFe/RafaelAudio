@@ -197,25 +197,6 @@ h1 {
               </DIV>
               <br>
               <h6>ARQUIVOS ENVIADOS</h6>
-              <?php require 'lista.php'; ?>
-              <div class="music">
-                  <table class="table">
-                    <tbody>
-                      <?php foreach ($arquivos as $arquivo): ?>
-                    <tr class="th">
-                      <td class="imagemmusic"><img src="imagens/padraomusica.jpg" alt="" class="imagemmusic"></td>
-                      <td id="mudar" style="padding-top: 30px;"><?php echo $arquivo; ?></td>
-                      <td id="mudar2" style="padding-top: 30px;">Artista</td>
-                      <td style="padding-top: 20px;">
-                        <audio controls>
-                          <source src="<?php echo $pasta . $arquivo; ?>" type="audio/mpeg">
-                            Seu navegador não suporta a reprodução de áudio.
-                        </audio>
-                      </td>
-                    </tr>
-                      <?php endforeach; ?>
-                    </tbody>
-                  </table>
               </div>
             </div>
           </div>
